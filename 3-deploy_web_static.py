@@ -2,7 +2,11 @@
 """
 creates and distributes an archive to your web servers,
 using the function deploy:
+
+execute: fab -f 3-deploy_web_static.py deploy -i ~/.ssh/school -u ubuntu
 """
+
+
 from fabric.api import env, put, run, local
 import os.path
 from time import strftime
